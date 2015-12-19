@@ -1,3 +1,5 @@
+config/config_env.rb
+
 *.gem
 *.rbc
 /.config
