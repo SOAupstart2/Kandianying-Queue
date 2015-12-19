@@ -2,7 +2,7 @@ require 'aws-sdk'
 require 'yaml'
 
 # Load keys
-keys = YAML.load(File.read('config/aws_key.yml'))
+keys = YAML.load(File.read('config/aws_keys.yml'))
 
 #Set credentials
 credentials = Aws::Credentials.new(keys['sqs']['AWS_ACCESS_KEY_ID'], keys['sqs']['AWS_SECRET_ACCESS_KEY'])
