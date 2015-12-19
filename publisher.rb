@@ -14,17 +14,23 @@ sqs = Aws::SQS::Client.new(
 )
 
 # Set url and message
-queue_msg = 'test kandianying'
 queue_url = keys['sqs']['AWS_URL']
+queue_msg = []
+
+5.times do
+  queue_msg << 'test kandianying'
+end
 
 #Send message
-sqs.send_message({
-  queue_url: queue_url,
-  message_body: queue_msg,
-  message_attributes: {
-    "String" => {
-      string_value: "String",
-      data_type: "String",
+queue_msg.each do |msg|
+  sqs.send_message({
+    queue_url: queue_url,
+    message_body: msg,
+    message_attributes: {
+      "String" => {
+        string_value: "String",
+        data_type: "String",
+      },
     },
-  },
-})
+  })
+end

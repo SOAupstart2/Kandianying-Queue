@@ -1,4 +1,4 @@
-config/aws_keys.yml
+/config/aws_keys.yml
 
 *.gem
 *.rbc
