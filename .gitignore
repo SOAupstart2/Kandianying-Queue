@@ -1,4 +1,4 @@
-config/config_env.rb
+config/aws_keys.yml
 
 *.gem
 *.rbc
