@@ -1,6 +1,0 @@
----
-sqs:
-  AWS_ACCESS_KEY_ID: "AKIAIYF52DLMRVL275YA"
-  AWS_SECRET_ACCESS_KEY: "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"
-  AWS_REGION: "ap-northeast-1"
-  AWS_URL: "https://sqs.ap-northeast-1.amazonaws.com/727439922262/SOA_queue"
